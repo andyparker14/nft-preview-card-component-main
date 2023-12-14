@@ -1,0 +1,120 @@
+* {
+  color: white;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+
+}
+
+.container {
+  display: flex;  
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 12px;
+  width: 300px;
+  height: 71vh;
+  padding: 20px;
+
+  box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 25px 2px rgba(0,0,0,0.75);
+
+  margin-bottom: 30px;
+}
+
+.top-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-photo {
+  width: 290px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.info {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.body-card {
+  margin-bottom: 30px;
+}
+
+.btn-eth {
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: center;
+
+  border: 0;
+  background: none;
+  color: hsl(178, 100%, 50%);
+
+  margin-right: 105px;
+}
+
+.btn-eth[data-icon="eth-nft"]::before {
+  content: "";
+  background-image: url('images/icon-ethereum.svg');
+  width: 11px;
+  height: 18px;
+}
+
+.btn-time {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.3rem;
+
+  border: 0;
+  background: none;
+  color: hsl(215, 51%, 70%);
+}
+
+.btn-time[data-icon="time-clock"]::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-image: url('images/icon-clock.svg');
+}
+
+hr {
+  margin: 20px 5px 15px 5px;
+  border-color: hsl(215, 26%, 43%);
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.7rem;
+}
+
+.profile-pic {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-left: 6px;
+}
+
+.name {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 14px;
+}
